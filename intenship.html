@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saffron Table | Restaurant Management System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="#home" data-page="home">
+        <span class="brand-mark"><i class="fa-solid fa-utensils"></i></span>
+        <span>Saffron Table</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+      <div class="nav-links">
+        <a href="#home" data-page="home">Home</a>
+        <a href="#about" data-page="about">About</a>
+        <a href="#menu" data-page="menu">Menu</a>
+        <a href="#reservation" data-page="reservation">Reservation</a>
+        <a href="#order" data-page="order">Order</a>
+        <a href="#login" data-page="login">Login</a>
+        <a href="#admin" data-page="admin">Admin</a>
+        <a href="#staff" data-page="staff">Staff</a>
+        <a href="#contact" data-page="contact">Contact</a>
+        <a href="#reports" data-page="reports">Reports</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="page active">
+      <div class="hero">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Restaurant Management System</p>
+          <h1>Saffron Table</h1>
+          <p>Serve guests, manage orders, track reservations, and understand daily performance from one elegant restaurant dashboard.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#reservation" data-page="reservation"><i class="fa-solid fa-calendar-check"></i> Book a Table</a>
+            <a class="btn ghost" href="#order" data-page="order"><i class="fa-solid fa-bag-shopping"></i> Order Online</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-wrap">
+        <div class="section-title reveal">
+          <p class="eyebrow">Chef's Picks</p>
+          <h2>Featured Dishes</h2>
+        </div>
+        <div class="dish-grid featured-dishes"></div>
+      </div>
+
+      <div class="section-wrap muted-band">
+        <div class="section-title reveal">
+          <p class="eyebrow">Guest Stories</p>
+          <h2>Customer Testimonials</h2>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial reveal"><i class="fa-solid fa-quote-left"></i><p>The reservation flow was smooth and the service team had our table ready before we arrived.</p><strong>Priya Menon</strong></article>
+          <article class="testimonial reveal"><i class="fa-solid fa-quote-left"></i><p>Fresh food, fast billing, and a clean order status screen. This feels built for a busy restaurant.</p><strong>Arjun Patel</strong></article>
+          <article class="testimonial reveal"><i class="fa-solid fa-quote-left"></i><p>The menu filters made it easy to find vegetarian dishes and place a quick office lunch order.</p><strong>Nisha Rao</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="page">
+      <div class="page-hero compact about-hero"><h1>About Us</h1><p>Hospitality, craft, and calm operations under one roof.</p></div>
+      <div class="section-wrap about-grid">
+        <div class="story reveal">
+          <p class="eyebrow">Our Story</p>
+          <h2>Serving memorable meals since 2012</h2>
+          <p>Saffron Table began as a small family dining room and grew into a modern restaurant known for seasonal produce, careful service, and reliable kitchen operations.</p>
+          <p>Our management system reflects that same culture: every order, table, customer, and inventory movement should be simple to track.</p>
+          <div class="mission-grid">
+            <article><i class="fa-solid fa-bullseye"></i><h3>Mission</h3><p>Deliver flavorful meals with warm, organized, and consistent service.</p></article>
+            <article><i class="fa-solid fa-eye"></i><h3>Vision</h3><p>Become the most trusted neighborhood restaurant experience for families and teams.</p></article>
+          </div>
+        </div>
+        <div class="image-stack reveal">
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=80" alt="Restaurant dining area">
+          <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=700&q=80" alt="Chef plating food">
+        </div>
+      </div>
+      <div class="section-wrap">
+        <div class="section-title reveal"><p class="eyebrow">People</p><h2>Meet the Team</h2></div>
+        <div class="team-grid">
+          <article class="team-card reveal"><img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=500&q=80" alt="Head chef"><h3>Ravi Kumar</h3><p>Executive Chef</p></article>
+          <article class="team-card reveal"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=80" alt="Restaurant manager"><h3>Ananya Shah</h3><p>Restaurant Manager</p></article>
+          <article class="team-card reveal"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80" alt="Service captain"><h3>Karan Mehta</h3><p>Service Captain</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="page">
+      <div class="page-hero compact menu-hero"><h1>Menu</h1><p>Search dishes, filter categories, and compare prices instantly.</p></div>
+      <div class="section-wrap">
+        <div class="toolbar reveal">
+          <label class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input id="menuSearch" type="search" placeholder="Search food, description, or category"></label>
+          <div class="filter-tabs" id="menuFilters"></div>
+        </div>
+        <div class="dish-grid" id="menuGrid"></div>
+      </div>
+    </section>
+
+    <section id="reservation" class="page">
+      <div class="page-hero compact reservation-hero"><h1>Reservation</h1><p>Book a table and receive instant confirmation.</p></div>
+      <div class="section-wrap form-layout">
+        <form id="reservationForm" class="panel form-panel" novalidate>
+          <h2>Table Booking</h2>
+          <div class="form-grid">
+            <label>Customer Name<input type="text" name="name" required minlength="3"></label>
+            <label>Phone Number<input type="tel" name="phone" required pattern="[0-9]{10}"></label>
+            <label>Date<input type="date" name="date" required></label>
+            <label>Time<input type="time" name="time" required></label>
+            <label>Number of Guests<input type="number" name="guests" min="1" max="20" required></label>
+          </div>
+          <button class="btn primary" type="submit"><i class="fa-solid fa-check"></i> Confirm Reservation</button>
+          <p class="message" id="reservationMessage"></p>
+        </form>
+        <aside class="panel info-panel"><i class="fa-solid fa-chair"></i><h3>Live Table Snapshot</h3><p>12 tables available today. Peak hours usually start after 7:30 PM.</p><div class="mini-stat"><span>Booked</span><strong>18</strong></div><div class="mini-stat"><span>Available</span><strong>12</strong></div></aside>
+      </div>
+    </section>
+
+    <section id="order" class="page">
+      <div class="page-hero compact order-hero"><h1>Order Online</h1><p>Add dishes, adjust quantities, and review checkout totals.</p></div>
+      <div class="section-wrap order-layout">
+        <div class="dish-grid order-menu" id="orderGrid"></div>
+        <aside class="panel cart-panel">
+          <h2><i class="fa-solid fa-cart-shopping"></i> Order Summary</h2>
+          <div id="cartItems" class="cart-items"></div>
+          <div class="cart-total"><span>Total</span><strong id="cartTotal">Rs.0</strong></div>
+          <button class="btn primary full" id="checkoutBtn"><i class="fa-solid fa-credit-card"></i> Checkout</button>
+          <p class="message" id="checkoutMessage"></p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="login" class="page">
+      <div class="page-hero compact login-hero"><h1>Customer Login</h1><p>Register, sign in, or recover access.</p></div>
+      <div class="section-wrap auth-grid">
+        <form id="registerForm" class="panel form-panel" novalidate><h2>Register</h2><label>Full Name<input type="text" required minlength="3"></label><label>Email<input type="email" required></label><label>Password<input type="password" required minlength="6"></label><button class="btn primary" type="submit">Create Account</button><p class="message"></p></form>
+        <form id="loginForm" class="panel form-panel" novalidate><h2>Login</h2><label>Email<input type="email" required></label><label>Password<input type="password" required minlength="6"></label><button class="btn primary" type="submit">Login</button><a href="#" id="forgotLink">Forgot password?</a><p class="message"></p></form>
+      </div>
+    </section>
+
+    <section id="admin" class="page dashboard-page">
+      <div class="page-hero compact admin-hero"><h1>Admin Dashboard</h1><p>Manage menu, orders, reservations, customers, reports, and inventory.</p></div>
+      <div class="section-wrap">
+        <div class="dashboard-cards" id="adminCards"></div>
+        <div class="dashboard-grid">
+          <div class="panel"><h2>Manage Menu Items</h2><table><thead><tr><th>Item</th><th>Category</th><th>Price</th><th>Status</th></tr></thead><tbody id="menuTable"></tbody></table></div>
+          <div class="panel"><h2>Manage Orders</h2><table><thead><tr><th>Order</th><th>Customer</th><th>Total</th><th>Status</th></tr></thead><tbody id="ordersTable"></tbody></table></div>
+          <div class="panel"><h2>Inventory Management</h2><table><thead><tr><th>Ingredient</th><th>Stock</th><th>Level</th></tr></thead><tbody id="inventoryTable"></tbody></table></div>
+          <div class="panel"><h2>Sales Reports</h2><canvas id="adminChart" height="180"></canvas></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="staff" class="page dashboard-page">
+      <div class="page-hero compact staff-hero"><h1>Staff Dashboard</h1><p>Track assigned tasks, order status, table service, and attendance.</p></div>
+      <div class="section-wrap">
+        <div class="dashboard-cards" id="staffCards"></div>
+        <div class="dashboard-grid">
+          <div class="panel"><h2>Assigned Tasks</h2><ul class="task-list" id="taskList"></ul></div>
+          <div class="panel"><h2>Update Order Status</h2><table><thead><tr><th>Order</th><th>Table</th><th>Status</th></tr></thead><tbody id="staffOrders"></tbody></table></div>
+          <div class="panel"><h2>Table Service</h2><div class="table-map" id="tableMap"></div></div>
+          <div class="panel"><h2>Attendance Tracking</h2><div class="attendance"><strong>Clocked In</strong><span>09:58 AM</span><button class="btn ghost small" id="attendanceBtn">Mark Break</button></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="page">
+      <div class="page-hero compact contact-hero"><h1>Contact Us</h1><p>Questions, catering requests, and feedback are always welcome.</p></div>
+      <div class="section-wrap contact-grid">
+        <form id="contactForm" class="panel form-panel" novalidate><h2>Send a Message</h2><label>Name<input type="text" required minlength="3"></label><label>Email<input type="email" required></label><label>Message<textarea required minlength="10"></textarea></label><button class="btn primary" type="submit">Send Message</button><p class="message"></p></form>
+        <div class="panel contact-card"><h2>Restaurant Details</h2><p><i class="fa-solid fa-location-dot"></i> 24 Market Road, Chennai, Tamil Nadu</p><p><i class="fa-solid fa-phone"></i> +91 98765 43210</p><p><i class="fa-solid fa-envelope"></i> hello@saffrontable.in</p><iframe title="Google map showing Chennai" src="https://www.google.com/maps?q=Chennai%20Tamil%20Nadu&output=embed" loading="lazy"></iframe></div>
+      </div>
+    </section>
+
+    <section id="reports" class="page dashboard-page">
+      <div class="page-hero compact reports-hero"><h1>Reports</h1><p>Daily sales, monthly revenue, customer insights, and inventory health.</p></div>
+      <div class="section-wrap">
+        <div class="dashboard-cards" id="reportCards"></div>
+        <div class="dashboard-grid reports-grid">
+          <div class="panel"><h2>Daily Sales</h2><canvas id="dailyChart" height="190"></canvas></div>
+          <div class="panel"><h2>Monthly Revenue</h2><canvas id="revenueChart" height="190"></canvas></div>
+          <div class="panel"><h2>Customer Statistics</h2><canvas id="customerChart" height="190"></canvas></div>
+          <div class="panel"><h2>Inventory Reports</h2><table><thead><tr><th>Item</th><th>Used</th><th>Remaining</th></tr></thead><tbody id="reportInventory"></tbody></table></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><strong>Saffron Table</strong><p>Professional Restaurant Management System</p></div>
+    <div class="socials"><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
